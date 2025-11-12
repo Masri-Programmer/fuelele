@@ -1,7 +1,3 @@
-Here is the translation of the second German text block:
-
----
-
 ### 🎯 Purpose of the Landing Page
 
 The main purpose of this landing page is the **introduction and establishment of the charity project or foundation "Fülele"**. The page aims to build trust, inform visitors about the mission, and prompt them to take action.
@@ -25,6 +21,6 @@ Based on the templates, the design should be **professional, trustworthy, and em
 - **Imagery:** The use of high-quality, emotional images is central. The examples show group photos, children engaging in activities, and prominent supporters (like Giovanni Zarrella). For "**Fülele**," authentic pictures of their projects or the people involved would be ideal.
 - **Trust Signals:** In addition to the "**Legal Basis**" section, logos of partners and any seals received (like the DZI Donation Seal) should be prominently placed.
 
----
+wir wollen ein Buchenzentrum bauen was auf die Zukunft basierend ist mit VR-Brillen mit einer also sozusagen eine Einrichtung Entwicklungsprozess die ganzen Möbel sind Betten etc. wurden schon entwickeln entwickelt und kommen halt alles von Familie oder in diese Einrichtungen rein dafür werden halt spenden
 
-Do you need a translation of any other specific part of your project notes?
+We want to build a future-oriented beech center with VR glasses, essentially a development process for the facility. All the furniture, beds, etc., have already been developed and are being provided by family members or donated to these facilities.
