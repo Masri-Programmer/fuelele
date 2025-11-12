@@ -167,18 +167,31 @@
     });
 
     isotopeItem
-      .querySelectorAll(".isotope-filters li")
-      .forEach(function (filters) {
-        filters.addEventListener(
+      .querySelectorAll(".isotope-filters button")
+      .forEach(function (filtersButton) {
+        filtersButton.addEventListener(
           "click",
           function () {
-            isotopeItem
-              .querySelector(".isotope-filters .filter-active")
-              .classList.remove("filter-active");
+            const oldActiveButton = isotopeItem.querySelector(
+              ".isotope-filters .filter-active"
+            );
+            if (oldActiveButton) {
+              oldActiveButton.classList.remove("filter-active");
+            }
             this.classList.add("filter-active");
+
+            const oldSelectedButton = isotopeItem.querySelector(
+              '.isotope-filters [aria-selected="true"]'
+            );
+            if (oldSelectedButton) {
+              oldSelectedButton.setAttribute("aria-selected", "false");
+            }
+            this.setAttribute("aria-selected", "true");
+
             initIsotope.arrange({
               filter: this.getAttribute("data-filter"),
             });
+
             if (typeof aosInit === "function") {
               aosInit();
             }
@@ -187,7 +200,6 @@
         );
       });
   });
-
   /**
    * Init swiper sliders
    */

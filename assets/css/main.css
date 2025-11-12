@@ -221,6 +221,7 @@ h6 {
   padding: 8px 20px;
   border-radius: 4px;
   margin-left: 15px;
+  margin-right: 15px;
 }
 
 .scrolled .navmenu .btn-donate {
@@ -233,6 +234,10 @@ h6 {
 
 /* Navmenu - Desktop */
 @media (min-width: 1200px) {
+  .navmenu .btn-donate {
+    margin-right: 0px;
+  }
+
   .navmenu {
     padding: 0;
   }
@@ -460,6 +465,127 @@ h6 {
 
   .mobile-nav-active .navmenu > ul {
     display: block;
+  }
+  .mobile-nav-active .navmenu > ul {
+    display: block;
+  }
+  .mobile-nav-toggle {
+    background: none;
+    border: none;
+    padding: 0;
+    color: var(--nav-color);
+    font-size: 28px;
+    line-height: 0;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  .mobile-nav-toggle i {
+    font-size: inherit;
+    color: inherit;
+    line-height: 0;
+  }
+
+  .mobile-nav-active .mobile-nav-toggle {
+    color: #fff;
+    position: absolute;
+    font-size: 32px;
+    top: 15px;
+    right: 15px;
+    margin-right: 0;
+    z-index: 9999;
+  }
+}
+
+/* 2. "Transparenz" Dropdown Button
+--------------------------------------------------------------*/
+
+@media (min-width: 1200px) {
+  .navmenu .dropdown > button {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    color: var(--background-color);
+    padding: 18px 15px;
+    font-size: 14px;
+    font-family: var(--nav-font);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+
+  .scrolled .navmenu .dropdown > button {
+    color: var(--nav-color);
+  }
+
+  .navmenu .dropdown:hover > button,
+  .navmenu .dropdown > button:focus,
+  .navmenu .dropdown > button.active {
+    color: var(--nav-hover-color) !important;
+  }
+
+  .navmenu .dropdown > button i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+    transition: 0.3s;
+  }
+}
+
+@media (max-width: 1199px) {
+  .navmenu .dropdown > button {
+    background: none;
+    border: none;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+
+    color: var(--nav-dropdown-color);
+    padding: 10px 20px;
+    font-family: var(--nav-font);
+    font-size: 18px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+
+  .navmenu .dropdown > button:hover,
+  .navmenu .dropdown > button.active,
+  .navmenu .dropdown > button:focus {
+    color: var(--nav-dropdown-hover-color);
+  }
+
+  .navmenu .dropdown > button i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  }
+
+  .navmenu .dropdown > button i:hover {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+  }
+
+  .navmenu .dropdown > button.active i {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    transform: rotate(180deg);
   }
 }
 
@@ -1850,6 +1976,76 @@ section,
   width: 100%;
 }
 
+/* 3. Portfolio Filter Tabs (Buttons)
+--------------------------------------------------------------*/
+
+.portfolio .portfolio-filters li {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+
+.portfolio .portfolio-filters button {
+  background: none;
+  border: none;
+  font-family: inherit;
+
+  padding: 20px 0;
+  margin: 0 40px;
+  font-size: 0.95rem;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  position: relative;
+}
+
+.portfolio .portfolio-filters button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background-color: var(--accent-color);
+  transition: all 0.4s ease;
+  transform: translateX(-50%);
+}
+
+.portfolio .portfolio-filters button:hover {
+  color: var(--default-color);
+}
+
+.portfolio .portfolio-filters button:hover::after {
+  width: 100%;
+}
+
+.portfolio .portfolio-filters button.filter-active,
+.portfolio .portfolio-filters button[aria-selected="true"] {
+  color: var(--default-color);
+  font-weight: 400;
+}
+
+.portfolio .portfolio-filters button.filter-active::after,
+.portfolio .portfolio-filters button[aria-selected="true"]::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .portfolio .portfolio-filters button {
+    margin: 0 20px;
+    padding: 16px 0;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio .portfolio-filters button {
+    margin: 0 12px;
+    padding: 14px 0;
+    font-size: 0.85rem;
+  }
+}
 /*--------------------------------------------------------------
 # Team Section
 --------------------------------------------------------------*/
