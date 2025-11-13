@@ -1,17 +1,11 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Index - Fülele & Elele</title>
-    <meta
-      name="description"
-      content="Fülele & Elele - Ein soziales Projekt für Kinder und Jugendliche in Stuttgart. Ein Ort für echte Begegnung, Gemeinschaft und Inklusion."
-    />
-    <meta
-      name="keywords"
-      content="Fülele, Elele, Stuttgart, Soziales Projekt, Kinder, Jugendliche, Gemeinschaft, Inklusion, Gülten Yilmaz-Meral"
-    />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
 
     <link href="assets/img/favicon/favicon-32x32.png" rel="icon" />
     <link
@@ -52,8 +46,8 @@
         <a href="index.html" class="logo d-flex align-items-center">
           <h1 class="sitename">
             <img
-              src="assets/img/draft/logo-no-bg.png"
-              alt="Fülele & Elele Logo"
+              src="assets/img/draft/logo.png"
+              alt="{{ trans('aria-labels.toHome') }}"
               srcset=""
             />
           </h1>
@@ -62,16 +56,40 @@
         <nav id="navmenu" class="navmenu">
           <ul id="navmenu-ul">
             <li><a href="#hero" class="active">Home</a></li>
-            <li><a href="#about">Mission</a></li>
-            <li><a href="#portfolio">Das Projekt</a></li>
-            <li><a href="#why-us">Unsere Werte</a></li>
+            <li><a href="#about">Über Uns</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#team">Team</a></li>
+
+            <li class="dropdown">
+              <button
+                type="button"
+                aria-expanded="false"
+                aria-controls="dropdown-transparenz"
+              >
+                <span>Transparenz</span>
+                <i
+                  class="bi bi-chevron-down toggle-dropdown"
+                  aria-hidden="true"
+                ></i>
+              </button>
+              <ul id="dropdown-transparenz">
+                <li><a href="#">Impressum</a></li>
+                </li>
+                <li><a href="#">Datenschutz</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Jobs / Karriere</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </li>
+
             <li><a href="#contact">Kontakt</a></li>
             <li><a href="#donate" class="btn-donate">Jetzt Spenden</a></li>
           </ul>
           <button
             type="button"
             class="mobile-nav-toggle d-xl-none"
-            aria-label="Hauptmenü umschalten"
+            aria-label="{{ trans('aria-labels.toggle_main_menu') }}"
             aria-controls="navmenu-ul"
             aria-expanded="false"
           >
@@ -82,7 +100,7 @@
     </header>
 
     <main class="main">
-      <section id="hero" class="hero section light-background">
+      <section id="hero" class="hero section dark-background">
         <div
           id="hero-carousel"
           class="carousel slide carousel-fade"
@@ -92,91 +110,66 @@
           <div class="carousel-item active">
             <img src="assets/img/draft/hero-carousel-1.jpg" alt="" />
             <div class="carousel-container">
-              <h2>Fülele & Elele<br /></h2>
+              <h2>Welcome to Hidayah<br /></h2>
               <p>
-                Wir schaffen in Stuttgart ein Gemeinschaftszentrum für Kinder,
-                Jugendliche und alle Generationen – ein Ort für echte Begegnung,
-                Hand in Hand.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
               </p>
-              <a href="#about" class="btn-get-started">Unsere Mission</a>
-              <img
-                class="logo"
-                src="assets/img/draft/logo-no-bg.png"
-                alt="Fülele & Elele Logo"
-                srcset=""
-              />
+              <a href="#about" class="btn-get-started">Read More</a>
             </div>
           </div>
           <div class="carousel-item">
             <img src="assets/img/draft/hero-carousel-2.jpg" alt="" />
             <div class="carousel-container">
-              <img
-                class="logo"
-                src="assets/img/draft/logo-no-bg.png"
-                alt="Fülele & Elele Logo"
-                srcset=""
-              />
-              <h2>Fülele & Elele<br /></h2>
+              <h2>At vero eos et accusamus</h2>
               <p>
-                Wir schaffen in Stuttgart ein Gemeinschaftszentrum für Kinder,
-                Jugendliche und alle Generationen – ein Ort für echte Begegnung,
-                Hand in Hand.
+                Nam libero tempore, cum soluta nobis est eligendi optio cumque
+                nihil impedit quo minus id quod maxime placeat facere possimus,
+                omnis voluptas assumenda est, omnis dolor repellendus.
+                Temporibus autem quibusdam et aut officiis debitis aut.
               </p>
-              <a href="#about" class="btn-get-started">Unsere Mission</a>
+              <a href="#about" class="btn-get-started">Read More</a>
             </div>
           </div>
           <div class="carousel-item">
             <img src="assets/img/draft/hero-carousel-3.jpg" alt="" />
             <div class="carousel-container">
-              <img
-                class="logo"
-                src="assets/img/draft/logo-no-bg.png"
-                alt="Fülele & Elele Logo"
-                srcset=""
-              />
-              <h2>Fülele & Elele<br /></h2>
+              <h2>Temporibus autem quibusdam</h2>
               <p>
-                Wir schaffen in Stuttgart ein Gemeinschaftszentrum für Kinder,
-                Jugendliche und alle Generationen – ein Ort für echte Begegnung,
-                Hand in Hand.
+                Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi
+                nesciunt omnis iste natus error sit voluptatem accusantium.
               </p>
-              <a href="#about" class="btn-get-started">Unsere Mission</a>
+              <a href="#about" class="btn-get-started">Read More</a>
             </div>
           </div>
           <div class="carousel-item">
             <img src="assets/img/draft/hero-carousel-4.jpg" alt="" />
             <div class="carousel-container">
-              <img
-                class="logo"
-                src="assets/img/draft/logo-no-bg.png"
-                alt="Fülele & Elele Logo"
-                srcset=""
-              />
-              <h2>Fülele & Elele<br /></h2>
+              <h2>Temporibus autem quibusdam</h2>
               <p>
-                Wir schaffen in Stuttgart ein Gemeinschaftszentrum für Kinder,
-                Jugendliche und alle Generationen – ein Ort für echte Begegnung,
-                Hand in Hand.
+                Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi
+                nesciunt omnis iste natus error sit voluptatem accusantium.
               </p>
-              <a href="#about" class="btn-get-started">Unsere Mission</a>
+              <a href="#about" class="btn-get-started">Read More</a>
             </div>
           </div>
           <div class="carousel-item">
             <img src="assets/img/draft/hero-carousel-5.jpg" alt="" />
             <div class="carousel-container">
-              <img
-                class="logo"
-                src="assets/img/draft/logo-no-bg.png"
-                alt="Fülele & Elele Logo"
-                srcset=""
-              />
-              <h2>Fülele & Elele<br /></h2>
+              <h2>Temporibus autem quibusdam</h2>
               <p>
-                Wir schaffen in Stuttgart ein Gemeinschaftszentrum für Kinder,
-                Jugendliche und alle Generationen – ein Ort für echte Begegnung,
-                Hand in Hand.
+                Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi
+                nesciunt omnis iste natus error sit voluptatem accusantium.
               </p>
-              <a href="#about" class="btn-get-started">Unsere Mission</a>
+              <a href="#about" class="btn-get-started">Read More</a>
             </div>
           </div>
           <a
@@ -184,7 +177,7 @@
             href="#hero-carousel"
             role="button"
             data-bs-slide="prev"
-            aria-label="Vorheriges"
+            aria-label="{{ trans('aria-labels.previous') }}"
           >
             <span
               class="carousel-control-prev-icon bi bi-chevron-left"
@@ -197,7 +190,7 @@
             href="#hero-carousel"
             role="button"
             data-bs-slide="next"
-            aria-label="Nächstes"
+            aria-label="{{ trans('aria-labels.next') }}"
           >
             <span
               class="carousel-control-next-icon bi bi-chevron-right"
@@ -210,8 +203,8 @@
       </section>
       <section id="about" class="about section">
         <div class="container section-title" data-aos="fade-up">
-          <span class="subtitle">NON SCHOLAE SED VITAE DISCIMUS</span>
-          <h2>Unsere Mission: Lernen fürs Leben</h2>
+          <span class="subtitle">About</span>
+          <h2>Unsere Gründerin & Mission</h2>
           <p>
             Angetrieben von dem Wunsch, echte Veränderung zu bewirken, bündelt
             "Fülele" Kräfte und Ressourcen.
@@ -223,25 +216,59 @@
               <div class="content">
                 <h2>Gülten Yilmaz-Meral</h2>
                 <p class="lead">
-                  Gülten Yilmaz-Meral hat "Fülele & Elele" (Hand in Hand) ins
-                  Leben gerufen, um einen Ort der Gemeinschaft zu schaffen.
+                  Gülten Yilmaz-Meral hat "Fülele" (Hand in Hand) ins Leben
+                  gerufen, um Kindern in Not gezielt und nachhaltig zu helfen.
                 </p>
 
                 <p>
-                  In einer Zeit digitaler Überforderung wollen wir einen Raum
-                  für echte Begegnungen, soziale und kreative Entwicklung
-                  bieten.
+                  Mit unermüdlichem Engagement und einem starken Netzwerk von
+                  Unterstützern schafft sie Orte, an denen Kinder sicher sind,
+                  lernen und wachsen können. Ihr Fokus liegt darauf, nicht nur
+                  materielle Hilfe zu leisten, sondern auch Bildung und
+                  Zukunftsperspektiven zu eröffnen.
                 </p>
 
                 <p>
-                  Unser Ziel ist ein inklusives Zentrum in Stuttgart, in dem
-                  alle Generationen – Kinder mit und ohne Behinderung,
-                  Jugendliche, Eltern und Senioren – zusammenkommen, voneinander
-                  lernen und Gemeinschaft erleben.
+                  Das Herzstück unseres aktuellen Vorhabens ist der Aufbau eines
+                  innovativen Buchzentrums, das traditionelles Lesen mit
+                  modernen Technologien wie VR-Brillen kombiniert, um die
+                  Fantasie und das Wissen der Kinder zu fördern.
                 </p>
+
+                <div class="stats-row">
+                  <div class="stat-item">
+                    <div
+                      class="stat-number purecounter"
+                      data-purecounter-start="0"
+                      data-purecounter-end="15"
+                      data-purecounter-duration="1"
+                    ></div>
+                    <div class="stat-label">Years Experience</div>
+                  </div>
+                  <div class="stat-item">
+                    <div
+                      class="stat-number purecounter"
+                      data-purecounter-start="0"
+                      data-purecounter-end="850"
+                      data-purecounter-duration="1"
+                    ></div>
+                    <div class="stat-label">Projects Completed</div>
+                  </div>
+                  <div class="stat-item">
+                    <div
+                      class="stat-number purecounter"
+                      data-purecounter-start="0"
+                      data-purecounter-end="240"
+                      data-purecounter-duration="1"
+                    ></div>
+                    <div class="stat-label">Happy Clients</div>
+                  </div>
+                </div>
 
                 <div class="cta-section">
-                  <a href="#contact" class="btn-outline">Kontakt aufnehmen</a>
+                  <a href="#" team="" class="btn-outline"
+                    >Unser Team kennenlernen</a
+                  >
                 </div>
               </div>
             </div>
@@ -263,10 +290,10 @@
                       <i class="bi bi-award" aria-hidden="true"></i>
                     </div>
                     <div class="text">
-                      <h4>Unser Ziel</h4>
+                      <h4>Unsere Mission</h4>
                       <p>
-                        Ein inklusives, selbsttragendes Gemeinschaftszentrum,
-                        das Herzen erreicht und Leben positiv verändert.
+                        Ein zukunftsorientiertes Buchzentrum mit VR-Brillen, um
+                        Bildung und Fantasie zu fördern.
                       </p>
                     </div>
                   </div>
@@ -276,7 +303,175 @@
           </div>
         </div>
       </section>
+      <section id="projects" class="services section">
+        <div class="container section-title" data-aos="fade-up">
+          <span class="subtitle">Projekte</span>
+          <h2>Was wir tun</h2>
+          <p>
+            Wir schaffen Orte, an denen Kinder lernen, wachsen und träumen
+            können. Unsere Einrichtungen werden durch Spenden und die großzügige
+            Unterstützung von Familienmitgliedern mit Möbeln, Betten und
+            Lernmaterialien ausgestattet.
+          </p>
+        </div>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-5 justify-content-center">
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-building" aria-hidden="true"></i>
+                </div>
+                <h3>Das Zukunfts-Buchzentrum</h3>
+                <p>
+                  Wir errichten ein modernes Zentrum, das Bücher und Technologie
+                  verbindet. Mit VR-Brillen öffnen wir neue Welten des Lernens
+                  und der Vorstellungskraft.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-box-seam" aria-hidden="true"></i>
+                </div>
+                <h3>Ausstattung & Möbel</h3>
+                <p>
+                  Dank großzügiger Spenden von Familienmitgliedern und
+                  Unterstützern sind alle Möbel, Betten und
+                  Einrichtungsgegenstände bereits vorhanden.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-people" aria-hidden="true"></i>
+                </div>
+                <h3>Gemeinschaft & Unterstützung</h3>
+                <p>
+                  Fülele (Hand in Hand) bedeutet für uns, gemeinsam mit
+                  Unterstützern und Freiwilligen eine liebevolle und fördernde
+                  Umgebung zu schaffen.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="why-us" class="why-us section">
+        <div class="container section-title" data-aos="fade-up">
+          <span class="subtitle">Rechtliche Grundlagen</span>
+          <h2>Transparenz & Vertrauen</h2>
+          <p>
+            Offenheit ist die Basis unserer Arbeit. Wir verpflichten uns zu
+            höchster Transparenz.
+          </p>
+        </div>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+              <div class="content">
+                <h2>Unsere Verpflichtung</h2>
+                <p>
+                  Transparenz ist uns wichtig. "Fülele" ist als gemeinnütziger
+                  Verein (e.V.) anerkannt. Wir sind im Vereinsregister
+                  eingetragen und unsere Satzung ist jederzeit öffentlich
+                  einsehbar.
+                </p>
+                <p>
+                  Alle Spenden werden zweckgebunden für den Aufbau und Betrieb
+                  unserer Einrichtungen für Kinder verwendet. Wir arbeiten daran,
+                  das DZI-Spendensiegel zu erhalten und werden regelmäßig von
+                  unabhängigen Stellen geprüft.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+              <div class="image-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?fit=crop&w=600&h=600&q=80"
+                  alt="Eine Person unterzeichnet ein offizielles Dokument, Symbol für Transparenz"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
 
+          <div class="features-grid" data-aos="fade-up" data-aos-delay="400">
+            <div class="row g-5">
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-item">
+                  <div class="icon-wrapper">
+                    <i class="bi bi-patch-check" aria-hidden="true"></i>
+                  </div>
+                  <div class="feature-content">
+                    <h3>Gemeinnütziger Verein (e.V.)</h3>
+                    <p>
+                      Wir sind als gemeinnütziger Verein anerkannt und im
+                      Vereinsregister eingetragen.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-item">
+                  <div class="icon-wrapper">
+                    <i class="bi bi-award" aria-hidden="true"></i>
+                  </div>
+                  <div class="feature-content">
+                    <h3>DZI-Spendensiegel (in Arbeit)</h3>
+                    <p>
+                      Wir streben das DZI-Siegel an und verpflichten uns zu
+                      dessen hohen Standards für Transparenz und Effizienz.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-item">
+                  <div class="icon-wrapper">
+                    <i class="bi bi-book" aria-hidden="true"></i>
+                  </div>
+                  <div class="feature-content">
+                    <h3>Öffentliche Satzung</h3>
+                    <p>
+                      Unsere Satzung ist jederzeit öffentlich einsehbar und legt
+                      klar unsere Ziele und Strukturen offen.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-item">
+                  <div class="icon-wrapper">
+                    <i class="bi bi-newspaper" aria-hidden="true"></i>
+                  </div>
+                  <div class="feature-content">
+                    <h3>Medienaufmerksamkeit</h3>
+                    <p>
+                      "Wir danken für die Berichterstattung, u.a. in der
+                      Stuttgarter Zeitung, die hilft, auf das Schicksal von
+                      Kindern aufmerksam zu machen."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="portfolio" class="portfolio section">
         <div class="container section-title" data-aos="fade-up">
           <span class="subtitle">Galerie</span>
@@ -357,9 +552,7 @@
               data-aos="fade-up"
               data-aos-delay="300"
             >
-              <div
-                class="col-lg-12 portfolio-item isotope-item filter-buchzentrum"
-              >
+              <div class="col-lg-12 portfolio-item isotope-item filter-buchzentrum">
                 <article class="portfolio-card">
                   <div class="row g-4">
                     <div class="col-md-6">
@@ -404,8 +597,8 @@
                         </h3>
                         <p class="project-description">
                           Ein Ort des Lernens und der Fantasie. Hier sehen Sie
-                          die ersten Entwürfe für die Einrichtung mit VR-Brillen
-                          und moderner Ausstattung.
+                          die ersten Entwürfe für die Einrichtung mit
+                          VR-Brillen und moderner Ausstattung.
                         </p>
                         <div class="project-meta">
                           <span class="client-name">Status: In Planung</span>
@@ -522,8 +715,8 @@
                         <h3 class="project-title">Spenden-Gala & Medien</h3>
                         <p class="project-description">
                           Dank der Unterstützung von Medienpartnern wie der
-                          Stuttgarter Zeitung können wir auf die Bedürfnisse der
-                          Kinder aufmerksam machen.
+                          Stuttgarter Zeitung können wir auf die Bedürfnisse
+                          der Kinder aufmerksam machen.
                         </p>
                         <div class="project-meta">
                           <span class="client-name">Medienpartner</span>
@@ -586,8 +779,8 @@
                         </h3>
                         <p class="project-description">
                           Unser Projekt lebt von den vielen freiwilligen Helfern
-                          und großzügigen Spendern, die Möbel, Zeit und Mittel
-                          bereitstellen.
+                          und großzügigen Spendern, die Möbel, Zeit und
+                          Mittel bereitstellen.
                         </p>
                         <div class="project-meta">
                           <span class="client-name">Freiwillige Helfer</span>
@@ -602,9 +795,7 @@
                   </div>
                 </article>
               </div>
-              <div
-                class="col-lg-12 portfolio-item isotope-item filter-buchzentrum"
-              >
+              <div class="col-lg-12 portfolio-item isotope-item filter-buchzentrum">
                 <article class="portfolio-card">
                   <div class="row g-4">
                     <div class="col-md-6">
@@ -708,9 +899,9 @@
                         </div>
                         <h3 class="project-title">Sichere Räume schaffen</h3>
                         <p class="project-description">
-                          Die gespendeten Möbel – Betten, Tische und Stühle –
-                          sind bereits eingelagert und warten auf den Einsatz in
-                          der neuen Einrichtung.
+                          Die gespendeten Möbel – Betten, Tische und Stühle
+                          – sind bereits eingelagert und warten auf den
+                          Einsatz in der neuen Einrichtung.
                         </p>
                         <div class="project-meta">
                           <span class="client-name">Sachspender</span>
@@ -752,106 +943,6 @@
           </div>
         </div>
       </section>
-      <section id="why-us" class="why-us section">
-        <div class="container section-title" data-aos="fade-up">
-          <span class="subtitle">Werte</span>
-          <h2>Transparenz & Vertrauen</h2>
-          <p>
-            Menschlichkeit entsteht nur, wenn alle gemeinsam in einem Raum sein
-            dürfen.
-          </p>
-        </div>
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row">
-            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
-              <div class="content">
-                <h2>Unsere Verpflichtung</h2>
-                <p>
-                  Transparenz ist uns wichtig. "Fülele & Elele" ist ein
-                  gemeinnütziges Projekt, das durch die Fülele Elele gGmbH
-                  getragen wird.
-                </p>
-                <p>
-                  Alle Spenden werden zweckgebunden für den Aufbau und Betrieb
-                  unseres Gemeinschaftszentrums für Kinder und Jugendliche in
-                  Stuttgart verwendet.
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
-              <div class="image-wrapper">
-                <img
-                  src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?fit=crop&w=600&h=600&q=80"
-                  alt="Eine Person unterzeichnet ein offizielles Dokument, Symbol für Transparenz"
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div class="features-grid" data-aos="fade-up" data-aos-delay="400">
-            <div class="row g-5">
-              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="feature-item">
-                  <div class="icon-wrapper">
-                    <i class="bi bi-patch-check" aria-hidden="true"></i>
-                  </div>
-                  <div class="feature-content">
-                    <h3>Inklusion</h3>
-                    <p>
-                      Ein Ort für Kinder mit und ohne Behinderung, Senioren,
-                      Jugendliche und Familien.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                <div class="feature-item">
-                  <div class="icon-wrapper">
-                    <i class="bi bi-hearts" aria-hidden="true"></i>
-                  </div>
-                  <div class="feature-content">
-                    <h3>Gemeinschaft</h3>
-                    <p>
-                      Wir fördern Respekt, Achtsamkeit und echte Begegnungen auf
-                      Augenhöhe.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="feature-item">
-                  <div class="icon-wrapper">
-                    <i class="bi bi-book" aria-hidden="true"></i>
-                  </div>
-                  <div class="feature-content">
-                    <h3>Pädagogik</h3>
-                    <p>
-                      Es geht um Gemeinschaft, Pädagogik, Inklusion und die
-                      Freude am Lernen fürs Leben.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-                <div class="feature-item">
-                  <div class="icon-wrapper">
-                    <i class="bi bi-shield-check" aria-hidden="true"></i>
-                  </div>
-                  <div class="feature-content">
-                    <h3>Medienkompetenz</h3>
-                    <p>
-                      Schutz vor digitaler Überforderung und Förderung eines
-                      bewussten Umgangs mit Medien.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section id="donate" class="donate-section section light-background">
         <div class="container section-title" data-aos="fade-up">
           <span class="subtitle">Jetzt Spenden</span>
@@ -860,11 +951,92 @@
             Unterstützen Sie Uns
           </h2>
           <p>
-            Jeder Beitrag hilft uns, das Gemeinschaftszentrum für Kinder in
-            Stuttgart Realität werden zu lassen. Helfen Sie mit Ihrer Spende!
+            Jeder Beitrag hilft uns, das Buchzentrum für Kinder in Not
+            fertigzustellen. Helfen Sie mit Ihrer Spende!
           </p>
         </div>
+        <div class="container" data-aos="fade-up" style="padding-bottom: 60px">
+          <div class="about-box">
+            <div class="row mb-4">
+              <div class="col-12">
+                <h2 class="mb-3">
+                  <i class="bi bi-question-circle" aria-hidden="true"></i> Wofür
+                  steht Fülele & Elele?
+                </h2>
+                <p class="lead">
+                  Fülele & Elele setzt sich für Bildungschancen und emotionale
+                  Stärkung von Kindern und Jugendlichen in Not ein. Wir sind der
+                  Überzeugung, dass jedes Kind die Chance verdient, in einem
+                  unterstützenden Umfeld zu lernen und zu wachsen.
+                </p>
+              </div>
+            </div>
 
+            <hr class="my-4" />
+
+            <div class="row gy-4 mt-3">
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="h5 text-success mb-3">
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                  Bisherige Erfolge
+                </h3>
+                <ul class="list-unstyled icon-list">
+                  <li>
+                    <i
+                      class="bi bi-pin-map-fill text-success"
+                      aria-hidden="true"
+                    ></i>
+                    <span>Einrichtung von Lernzentren</span>
+                  </li>
+                  <li>
+                    <i
+                      class="bi bi-clipboard2-heart-fill text-success"
+                      aria-hidden="true"
+                    ></i>
+                    <span>Förderung von Therapieprogrammen</span>
+                  </li>
+                  <li>
+                    <i
+                      class="bi bi-mortarboard-fill text-success"
+                      aria-hidden="true"
+                    ></i>
+                    <span>Bildungsworkshops</span>
+                  </li>
+                  <li>
+                    <i
+                      class="bi bi-people-fill text-success"
+                      aria-hidden="true"
+                    ></i>
+                    <span>Gemeinschaftsunterstützung</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="h5 text-danger mb-3">
+                  <i class="bi bi-bullseye" aria-hidden="true"></i> Unsere Ziele
+                </h3>
+                <p>
+                  Unsere Reichweite zu erweitern und mehr Kinder in ganz
+                  Deutschland umfassend zu unterstützen, mit Zugang zu Bildung,
+                  Therapie und emotionaler Betreuung.
+                </p>
+              </div>
+
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <h3 class="h5 mb-3">
+                  <i class="bi bi-person-heart" aria-hidden="true"></i> Unsere
+                  Unterstützer
+                </h3>
+                <p>
+                  Wir arbeiten mit engagierten Partnern, lokalen Gemeinschaften
+                  und Einzelspendern zusammen, die unsere Vision einer besseren
+                  Zukunft für alle Kinder teilen.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <div class="row gy-4">
             <div class="col-lg-7">
@@ -876,10 +1048,10 @@
                   </h3>
                   <p>
                     Ihre Spende hilft direkt. Bitte nutzen Sie die folgenden
-                    Kontoinformationen (Beispieldaten):
+                    Kontoinformationen (Beispieldate):
                   </p>
                   <ul class="bank-info">
-                    <li><strong>Kontoinhaber:</strong> Fülele Elele gGmbH</li>
+                    <li><strong>Kontoinhaber:</strong> Fülele e.V.</li>
                     <li>
                       <strong>IBAN:</strong>
                       <span class="fw-bold text-primary"
@@ -887,17 +1059,14 @@
                       >
                     </li>
                     <li><strong>BIC:</strong> BEISPIELBANK</li>
-                    <li><strong>Bank:</strong> Musterbank Stuttgart</li>
-                    <li>
-                      <strong>Verwendungszweck:</strong> Spende
-                      Gemeinschaftszentrum
-                    </li>
+                    <li><strong>Bank:</strong> Musterbank Berlin</li>
+                    <li><strong>Verwendungszweck:</strong> Spende Buchzentrum</li>
                   </ul>
                 </div>
                 <p class="text-muted small mt-auto pt-3">
                   <i class="bi bi-info-circle-fill" aria-hidden="true"></i> Wir
-                  sind als gemeinnützig anerkannt. Spenden sind steuerlich
-                  absetzbar.
+                  sind als gemeinnütziger Verein anerkannt. Spenden sind
+                  steuerlich absetzbar.
                 </p>
               </div>
             </div>
@@ -973,7 +1142,7 @@
                   </div>
                   <div class="detail-content">
                     <span class="detail-label">Telefon</span>
-                    <span class="detail-value">+49 152 58 491 491</span>
+                    <span class="detail-value">+49 30 1234567</span>
                   </div>
                 </div>
 
@@ -982,9 +1151,9 @@
                     <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
                   </div>
                   <div class="detail-content">
-                    <span class="detail-label">Adresse (Projektort)</span>
+                    <span class="detail-label">Adresse</span>
                     <span class="detail-value"
-                      >Musterstraße 1<br />70173 Stuttgart, Deutschland</span
+                      >Musterstraße 1<br />10115 Berlin, Deutschland</span
                     >
                   </div>
                 </div>
@@ -1069,31 +1238,31 @@
           </div>
         </div>
       </section>
-    </main>
+      </main>
 
     <footer id="footer" class="footer">
       <div class="container footer-top">
         <div class="row gy-4">
           <div class="col-lg-5 col-md-12 footer-about">
             <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename">Fülele & Elele</span>
+              <span class="sitename">Fülele</span>
             </a>
             <p>
               Fülele - Hand in Hand für Kinder. Wir bauen ein
-              Gemeinschaftszentrum in Stuttgart, um Bildung, Inklusion und echte
-              Begegnung zu schaffen.
+              zukunftsorientiertes Buchzentrum, um Bildung und Chancen zu
+              schaffen.
             </p>
             <div class="social-links d-flex mt-4">
-              <a href="" aria-label="Twitter"
+              <a href="" aria-label="{{ trans('aria-labels.social_twitter') }}"
                 ><i class="bi bi-twitter-x" aria-hidden="true"></i
               ></a>
-              <a href="" aria-label="Facebook"
+              <a href="" aria-label="{{ trans('aria-labels.social_facebook') }}"
                 ><i class="bi bi-facebook" aria-hidden="true"></i
               ></a>
-              <a href="" aria-label="Instagram"
+              <a href="" aria-label="{{ trans('aria-labels.social_instagram') }}"
                 ><i class="bi bi-instagram" aria-hidden="true"></i
               ></a>
-              <a href="" aria-label="LinkedIn"
+              <a href="" aria-label="{{ trans('aria-labels.social_linkedin') }}"
                 ><i class="bi bi-linkedin" aria-hidden="true"></i
               ></a>
             </div>
@@ -1103,10 +1272,10 @@
             <h4>Navigation</h4>
             <ul>
               <li><a href="#hero">Home</a></li>
-              <li><a href="#about">Mission</a></li>
-              <li><a href="#portfolio">Das Projekt</a></li>
+              <li><a href="#about">Über Uns</a></li>
+              <li><a href="#projects">Projekte</a></li>
+              <li><a href="#legal">Transparenz</a></li>
               <li><a href="#">Impressum</a></li>
-              <li><a href="#">Datenschutz</a></li>
             </ul>
           </div>
 
@@ -1115,29 +1284,30 @@
             <ul>
               <li><a href="#donate">Jetzt Spenden</a></li>
               <li><a href="#contact">Medienpartner werden</a></li>
+              <li><a href="#contact">Freiwillig melden</a></li>
               <li><a href="#contact">Kontakt</a></li>
+              <li><a href="#">Datenschutz</a></li>
             </ul>
           </div>
 
           <div
             class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
           >
-            <h4>Kontakt</h4>
+            <h4>Kontakt (Beispiel)</h4>
             <p>Musterstraße 1</p>
-            <p>70173 Stuttgart</p>
+            <p>10115 Berlin</p>
             <p>Deutschland</p>
             <p class="mt-4">
-              <strong>Telefon:</strong> <span>+49 152 58 491 491</span>
+              <strong>Telefon:</strong> <span>+49 30 1234567</span>
             </p>
             <p><strong>Email:</strong> <span>info@fuelele-projekt.de</span></p>
           </div>
         </div>
       </div>
 
-      <div class="copyright mt-4">
-        <p class="text-center">
-          © <span>Copyright</span>
-          <strong class="px-1 sitename">Fülele & Elele</strong>
+      <div class="container copyright text-center mt-4">
+        <p>
+          © <span>Copyright</span> <strong class="px-1 sitename">Fülele</strong>
           <span>All Rights Reserved</span>
         </p>
       </div>
@@ -1147,7 +1317,7 @@
       href="#"
       id="scroll-top"
       class="scroll-top d-flex align-items-center justify-content-center"
-      aria-label="Nach oben scrollen"
+      aria-label="{{ trans('aria-labels.scroll_to_top') }}"
       ><i class="bi bi-arrow-up-short" aria-hidden="true"></i
     ></a>
 

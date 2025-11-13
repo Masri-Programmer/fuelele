@@ -189,7 +189,7 @@ h6 {
 .scrolled .header {
   isolation: isolate;
   border-bottom: 1px solid
-    color-mix(in srgb, var(--default-color), transparent 90%);
+    color-mix(in srgb, var(--background-color), transparent 90%);
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
 }
 
@@ -612,7 +612,6 @@ h6 {
   color: var(--default-color);
   background-color: var(--background-color);
   font-size: 14px;
-  padding-bottom: 50px;
   position: relative;
 }
 
@@ -712,8 +711,8 @@ h6 {
 }
 
 .footer .copyright {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background-color: color-mix(in srgb, var(--default-color), transparent 95%);
 }
 
@@ -999,6 +998,15 @@ section,
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
+}
+.hero .carousel-item .logo {
+  object-fit: contain;
+  opacity: 40%;
+  top: 80%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  max-height: 492px;
+  max-width: 492px;
 }
 
 .hero .carousel-item:before {
