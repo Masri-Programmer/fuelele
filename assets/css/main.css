@@ -1316,14 +1316,14 @@ section,
 
 .about .image-wrapper .floating-card {
   position: absolute;
-  bottom: -30px;
-  right: -30px;
+  bottom: -80px;
+  right: -80px;
   background-color: var(--surface-color);
   border-radius: 12px;
   padding: 30px;
   box-shadow: 0 15px 40px
     color-mix(in srgb, var(--default-color), transparent 85%);
-  max-width: 280px;
+  max-width: 480px;
 }
 
 @media (max-width: 992px) {
@@ -4824,4 +4824,8 @@ section,
   display: inline-block;
   min-width: 120px;
   color: var(--heading-color);
+}
+
+.screenshot-link {
+  object-fit: contain !important;
 }
