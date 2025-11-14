@@ -238,6 +238,79 @@
   });
 
   /**
+   * Cursor
+   */
+
+  const canvas = document.getElementById("cursor-trail");
+  const ctx = canvas.getContext("2d");
+
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  const trailColor = "#7c5f35";
+  const trailWidth = 2;
+  const fadeSpeed = 0.08;
+  const smoothing = 0.2;
+  // ---------------------
+
+  let mouseX = 0;
+  let mouseY = 0;
+
+  let dotX = 0;
+  let dotY = 0;
+
+  let lastX = 0;
+  let lastY = 0;
+
+  function setInitialPosition() {
+    const center_x = window.innerWidth / 2;
+    const center_y = window.innerHeight / 2;
+    mouseX = center_x;
+    mouseY = center_y;
+    dotX = center_x;
+    dotY = center_y;
+    lastX = center_x;
+    lastY = center_y;
+  }
+
+  setInitialPosition();
+
+  window.addEventListener("mousemove", (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+  });
+
+  function lerp(start, end, t) {
+    return start * (1 - t) + end * t;
+  }
+
+  function animate() {
+    dotX = lerp(dotX, mouseX, smoothing);
+    dotY = lerp(dotY, mouseY, smoothing);
+
+    ctx.globalCompositeOperation = "destination-out";
+
+    ctx.fillStyle = `rgba(0, 0, 0, ${fadeSpeed})`;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    ctx.globalCompositeOperation = "source-over";
+
+    ctx.beginPath();
+    ctx.moveTo(lastX, lastY);
+    ctx.lineTo(dotX, dotY);
+    ctx.strokeStyle = trailColor;
+    ctx.lineWidth = trailWidth;
+    ctx.lineCap = "round";
+    ctx.stroke();
+
+    lastX = dotX;
+    lastY = dotY;
+
+    requestAnimationFrame(animate);
+  }
+  animate();
+
+  /**
    * Navmenu Scrollspy
    */
   let navmenulinks = document.querySelectorAll(".navmenu a");
